@@ -44,7 +44,7 @@ public class Sach {
             CascadeType.DETACH,CascadeType.REFRESH
     })
     @JoinTable( name="sach_theloai",
-        joinColumns=@JoinColumn(name="sanh_id"),
+        joinColumns=@JoinColumn(name="ma_sach"),
         inverseJoinColumns = @JoinColumn(name="ma_the_loai")
     )
     private List<TheLoai> dachSachTheLoai;
